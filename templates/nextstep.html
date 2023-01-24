@@ -7,6 +7,11 @@
   </head>
   <body>
     <h1>Welcome to my Flask App!</h1>
-    <a href="/connect">Click here to connect your Spotify account</a>
+    <p>Spotify account is connected!</p>
+    <form action="/nextstep" method="post">
+        <label for="yt_link">YouTube link:</label><br>
+        <input type="text" id="yt_link" name="yt_link"><br>
+        <input type="submit" value="Submit">
+      </form>
   </body>
 </html>
