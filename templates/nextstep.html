@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
     <script type="text/javascript" src="static/js/main.js"></script>
-    <title>My Flask App</title>
+    <title>YouTube - Spotify Playlist Converter</title>
   </head>
   <body>
-    <h1>Welcome to my Flask App!</h1>
-    <p>Spotify account is connected!</p>
-    <form action="/nextstep" method="post">
-        <label for="yt_link">YouTube link:</label><br>
-        <input type="text" id="yt_link" name="yt_link"><br>
-        <input type="submit" value="Submit">
-      </form>
+    <div class="container">
+      <h1 class="text-center my-5">YouTube - Spotify Playlist Converter</h1>
+      <p class="text-center my-5">Spotify account is connected!</p>
+      <div class="row justify-content-center">
+        <form class="col-lg-6" action="/nextstep" method="post">
+          <div class="form-group">
+            <label for="yt_link">YouTube link you wish to convert:</label>
+            <input type="text" class="form-control" id="yt_link" name="yt_link">
+          </div>
+          <div class="form-group text-center">
+            <input type="submit" class="btn btn-primary" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
